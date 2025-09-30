@@ -4,6 +4,7 @@
 @import url('./navbar.css');
 @import url('./perfil.css');
 @import url('./sobre.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
 
 :root {
   /* Paleta Primária */
@@ -39,7 +40,7 @@ a {
 }
 
 body {
-  font-family: Poppins, sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
 }
