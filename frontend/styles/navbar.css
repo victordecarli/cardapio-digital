@@ -1,0 +1,61 @@
+ .navbar {
+            background-color: #252229;
+            color: #F0F0F0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px; /* Espaçamento interno (vertical e horizontal) */
+            border-bottom: 1px solid #3a3640; /* Linha sutil na parte inferior */
+        }
+
+        .navbar-logo a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        .navbar-logo a::before {
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: #AD77FF;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+
+        .navbar-logo a::after {
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: #4C82F7; /* Ponto azul */
+            border-radius: 50%;
+            margin-right: 15px; /* Espaço entre os pontos e o texto */
+        }
+
+
+        /* Estilos para a lista de links */
+        .navbar-links {
+            list-style: none; /* Remove os marcadores da lista */
+            margin: 0;
+            padding: 0;
+            display: flex; /* Alinha os links horizontalmente */
+            gap: 40px; /* Espaço entre cada link */
+        }
+
+        /* Estilos para cada item do link */
+        .navbar-links li a {
+            color: #C1BFC8; /* Cor cinza claro para os links */
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            transition: color 0.3s ease; /* Efeito de transição suave na cor */
+        }
+
+        /* Efeito ao passar o mouse sobre o link */
+        .navbar-links li a:hover {
+            color: #FFFFFF; /* Muda a cor para branco ao passar o mouse */
+        }
