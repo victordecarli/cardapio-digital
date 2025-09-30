@@ -1,0 +1,139 @@
+
+        .footer {
+            background-color: #252229;
+            padding: 60px 40px 20px 40px;
+            border-top: 1px solid #3a3640;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        /* Seção principal do footer com logo e links */
+        .footer-main {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            flex-wrap: wrap; /* Permite que os itens quebrem para a linha de baixo em telas menores */
+        }
+
+        /* Seção da marca (logo e social) */
+        .footer-brand {
+            flex: 1; /* Ocupa uma parte do espaço */
+            min-width: 200px; /* Largura mínima */
+        }
+
+        .footer-logo a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        /* Pontos coloridos do logo */
+        .footer-logo a::before {
+            content: ''; display: inline-block; width: 10px; height: 10px; background-color: #AD77FF; border-radius: 50%; margin-right: 5px;
+        }
+        .footer-logo a::after {
+            content: ''; display: inline-block; width: 10px; height: 10px; background-color: #4C82F7; border-radius: 50%; margin-right: 15px;
+        }
+
+        /* Ícones de redes sociais */
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            color: #C1BFC8;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            color: #FFFFFF;
+        }
+
+        .social-icons svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        /* Grid que contém as colunas de links */
+        .footer-links-grid {
+            flex: 2; /* Ocupa duas partes do espaço */
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .footer-column h4 {
+            color: #FFFFFF;
+            font-size: 16px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-column ul li a {
+            color: #C1BFC8;
+            text-decoration: none;
+            font-size: 15px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-column ul li a:hover {
+            color: #FFFFFF;
+        }
+        
+        /* Seção inferior com copyright */
+        .footer-bottom {
+            border-top: 1px solid #3a3640;
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            color: #8D8A93;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .footer-legal a {
+            color: #8D8A93;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-legal a:hover {
+            color: #FFFFFF;
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            .footer-main, .footer-bottom {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .footer-links-grid {
+                width: 100%;
+            }
+        }
