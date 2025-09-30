@@ -45,6 +45,11 @@ body {
   padding: 0;
 }
 
+.logo {
+  width: fit-content;
+  height: 30px;
+}
+
 .btn {
   background: var(--color-secondary);
   color: #fff;
