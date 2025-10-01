@@ -1,3 +1,8 @@
+.localizacao {
+  max-width: 1390px;
+  margin: 0 auto;
+}
+
 .localizacao-container {
   min-height: 100vh;
   background: #fff;
@@ -29,7 +34,6 @@
   grid-template-columns: 1fr;
   gap: 32px;
   width: 100%;
-  max-width: 1100px;
 }
 
 @media (min-width: 768px) {
